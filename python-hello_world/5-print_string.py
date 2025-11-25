@@ -2,5 +2,4 @@
 str = "Holberton School"
 
 
-print(str,str,str)
-print(str[0:9])
+print(f"{str}{str}{str}{str}\n",str[0:9])
