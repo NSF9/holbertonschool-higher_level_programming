@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
-    import sys
+import sys
 
+if __name__ == "__main__":
     argv = sys.argv[1:]
     argc = len(argv)
-
-    Result = 0
-
+    result = 0
     for i in range(argc):
-        Result += int(argv[i])
-        print(Result)
+        result += int(argv[i])
+    print(result)
