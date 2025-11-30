@@ -7,4 +7,3 @@ def no_c(my_string):
             sentence_without_c += ch
 
     return sentence_without_c
-
