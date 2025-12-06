@@ -6,7 +6,7 @@ TypeError or OverflowError where appropriate.
 """
 
 def add_integer(a, b=98):
-"""
+    """
     Adds two integers or floats casted to integers.
 
     Args:
@@ -20,12 +20,12 @@ def add_integer(a, b=98):
         TypeError: If a or b are not int or float.
         OverflowError: If a or b are infinity.
     """
-    if not isinstance(a,(int, float)):
+    if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
     if not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")
-    if a == float("inf") or a == float("-inf"):
-        raise OverflowError
-    if b == float("inf") or b == float("-inf"):
-        raise OverflowError
-    return int(a + b)
+    if a == float('inf') or a == float('-inf'):
+        raise OverflowError()
+    if b == float('inf') or b == float('-inf'):
+        raise OverflowError()
+    return int(a) + int(b)
