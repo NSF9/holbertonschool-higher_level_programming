@@ -1,4 +1,11 @@
 #!/usr/bin/python3
+#!/usr/bin/python3
+"""
+This module defines the add_integer function that adds two numbers.
+It ensures both inputs are integers or floats (cast to int), and raises
+TypeError or OverflowError where appropriate.
+"""
+
 def add_integer(a, b=98):
 
     if not isinstance(a,(int, float)):
