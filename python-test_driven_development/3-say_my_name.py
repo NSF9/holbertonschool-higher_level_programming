@@ -4,6 +4,7 @@ This module defines the function say_my_name
 which prints the full name.
 """
 
+
 def say_my_name(first_name, last_name=""):
     """Prints a full name in the format 'My name is <first> <last>'.
 
