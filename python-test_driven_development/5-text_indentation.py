@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """
 This module defines the function `text_indentation`
-which prints a text with two new lines after each '.', '?' or ':' character.
+which prints a text with two new lines after '.', '?' or ':' character.
 """
+
 
 def text_indentation(text):
     """
@@ -24,7 +25,6 @@ def text_indentation(text):
         if text[i] in special_chars:
             print("\n")
             i += 1
-            # Skip all spaces after special char
             while i < len(text) and text[i] == " ":
                 i += 1
             continue
