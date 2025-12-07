@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-
-# Define a class that represents a square
+"""
+Define a class that represents a square
+"""
 class Square():
     """
     A simple class that represents a square.
