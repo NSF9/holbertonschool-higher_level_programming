@@ -116,7 +116,7 @@ class Rectangle:
             lines.append("#" * self.__width)
         return "\n".join(lines)
 
-        def __repr__(self):
+    def __repr__(self):
         """
         Returns the default object representation.
 
@@ -127,6 +127,6 @@ class Rectangle:
         Useful for debugging or when no custom representation is needed.
 
         Returns:
-            str: The default representation of the object.
+        str: The default representation of the object.
         """
         return object.__repr__(self)
