@@ -117,10 +117,16 @@ class Rectangle:
         return "\n".join(lines)
 
     def __repr__(self):
-        """
-        Returns an official string representation of the rectangle.
+    """
+    Returns the default object representation.
 
-        Returns:
-            str: A string that can recreate the rectangle using eval().
-        """
-        return f"Rectangle({self.width}, {self.height})"
+    This method uses the base 'object.__repr__()' implementation to display
+    the technical memory address format, such as:
+    <module_name.ClassName object at 0x...>
+
+    Useful for debugging or when no custom representation is needed.
+
+    Returns:
+        str: The default representation of the object.
+    """
+    return object.__repr__(self)
