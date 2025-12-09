@@ -116,17 +116,17 @@ class Rectangle:
             lines.append("#" * self.__width)
         return "\n".join(lines)
 
-    def __repr__(self):
-    """
-    Returns the default object representation.
+        def __repr__(self):
+        """
+        Returns the default object representation.
 
-    This method uses the base 'object.__repr__()' implementation to display
-    the technical memory address format, such as:
-    <module_name.ClassName object at 0x...>
+        This method uses the base 'object.__repr__()' implementation to display
+        the technical memory address format, such as:
+        <module_name.ClassName object at 0x...>
 
-    Useful for debugging or when no custom representation is needed.
+        Useful for debugging or when no custom representation is needed.
 
-    Returns:
-        str: The default representation of the object.
-    """
-    return object.__repr__(self)
+        Returns:
+            str: The default representation of the object.
+        """
+        return object.__repr__(self)
