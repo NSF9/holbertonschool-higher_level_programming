@@ -13,7 +13,7 @@ class Rectangle:
 
     number_of_instances = 0
 
-    def __init__(self, width = 0, height = 0):
+    def __init__(self, width=0, height=0):
         """
         Initializes a new Rectangle instance.
 
@@ -107,33 +107,29 @@ class Rectangle:
         """
         Returns a string representation of the rectangle using '#'.
 
-        If width or height is 0, returns an empty string.
-
         Returns:
-            str: The rectangle as a string of '#' characters.
+            str: The rectangle as rows of '#' characters,
+                 or an empty string if width or height is 0.
         """
-        if self.__width <= 0 or self.__height <= 0:
+        if self.__width == 0 or self.__height == 0:
             return ""
-        lines = []
-        for _ in range(self.__height):
-            lines.append("#" * self.__width)
+        lines = ["#" * self.__width for _ in range(self.__height)]
         return "\n".join(lines)
 
     def __repr__(self):
         """
-        Returns the default object representation.
-
-        This method uses the base 'object.__repr__()' implementation to display
-        the technical memory address format, such as:
-        <module_name.ClassName object at 0x...>
-
-        Useful for debugging or when no custom representation is needed.
+        Returns an official string representation of the rectangle
+        that can be used to recreate the object using eval().
 
         Returns:
-        str: The default representation of the object.
+            str: Representation in the form Rectangle(width, height)
         """
         return f"Rectangle({self.__width}, {self.__height})"
-    
+
     def __del__(self):
-       print("Bye rectangle...")
-       Rectangle.number_of_instances -= 1
+        """
+        Prints a message when an instance is deleted
+        and decreases the instance counter.
+        """
+        print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
