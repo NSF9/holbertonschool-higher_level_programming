@@ -129,7 +129,6 @@ class Rectangle:
         Returns:
         str: The default representation of the object.
         """
-        return f"Rectangle({self.__width}, {self.__height})"
-    
+        return f"Rectangle({self.__width}, {self.__height})" 
     def __del__(self):
-       print("Bye rectangle...")
+        print("Bye rectangle...")
