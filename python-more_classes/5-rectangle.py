@@ -127,8 +127,12 @@ class Rectangle:
         Useful for debugging or when no custom representation is needed.
 
         Returns:
-        str: The default representation of the object.
+            str: The default representation of the object.
         """
-        return f"Rectangle({self.__width}, {self.__height})" 
+        return f"Rectangle({self.__width}, {self.__height})"
+
     def __del__(self):
+        """
+        Prints a message when the rectangle instance is deleted.
+        """
         print("Bye rectangle...")
