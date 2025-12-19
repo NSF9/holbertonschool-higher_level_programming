@@ -20,4 +20,4 @@ class BaseGeometry:
         Raises an exception indicating that the area method is not implemented.
         Should be overridden by subclasses.
         """
-        raise NotImplementedError("area() is not implemented")
+        raise Exception("area() is not implemented")
