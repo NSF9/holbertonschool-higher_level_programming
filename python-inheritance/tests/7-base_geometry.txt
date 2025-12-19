@@ -1,0 +1,65 @@
+
+1 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+2 >>> ml = BaseGeometry()
+3 >>> print(dir(ml))
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__',
+ '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__',
+ '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__',
+ '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'area', 'integer_validator']
+
+4 >>> ml.integer_validator("age", "10")
+Traceback (most recent call last):
+  ...
+TypeError: age must be an integer
+
+5 >>> ml.integer_validator("age", -5)
+Traceback (most recent call last):
+  ...
+ValueError: age must be greater than 0
+
+6 >>> ml.integer_validator("age", 0)
+Traceback (most recent call last):
+  ...
+ValueError: age must be greater than 0
+
+7 >>> ml.integer_validator("age", 25)
+
+8 >>> ml.area()
+Traceback (most recent call last):
+  ...
+Exception: area() is not implemented
+
+9 >>> ml.integer_validator("age")
+Traceback (most recent call last):
+  ...
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+10 >>> ml.integer_validator()
+Traceback (most recent call last):
+  ...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+11 >>> ml.integer_validator("age", (25,))
+Traceback (most recent call last):
+  ...
+TypeError: age must be an integer
+
+12 >>> ml.integer_validator("age", True)
+Traceback (most recent call last):
+  ...
+TypeError: age must be an integer
+
+13 >>> ml.integer_validator("age", [25])
+Traceback (most recent call last):
+  ...
+TypeError: age must be an integer
+
+14 >>> ml.integer_validator("age", {25})
+Traceback (most recent call last):
+  ...
+TypeError: age must be an integer
+
+15 >>> ml.integer_validator("age", None)
+Traceback (most recent call last):
+  ...
+TypeError: age must be an integer
