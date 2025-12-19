@@ -9,7 +9,8 @@ Rectangle = __import__("9-rectangle").Rectangle
 class Square(Rectangle):
     """
     Square class that inherits from Rectangle.
-    Ensures that size is a positive integer and both width and height are equal.
+    Ensures that size is a positive integer and 
+    both width and height are equal.
     """
 
     def __init__(self, size):
