@@ -23,15 +23,15 @@ Traceback (most recent call last):
     ...
 Exception: area() is not implemented
 
->>> ml.integer_validator("age")
+>>> ml.integer_validator("age")  # doctest: +ELLIPSIS
 Traceback (most recent call last):
     ...
-TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+TypeError: ... missing 1 required positional argument: 'value'
 
->>> ml.integer_validator()
+>>> ml.integer_validator()  # doctest: +ELLIPSIS
 Traceback (most recent call last):
     ...
-TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+TypeError: ... missing 2 required positional arguments: 'name' and 'value'
 
 >>> ml.integer_validator("age", (25,))
 Traceback (most recent call last):
