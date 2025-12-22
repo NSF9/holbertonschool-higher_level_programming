@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-"""Module that defines a function to read a file and print its contents."""
+"""Module that defines a function to write text to a file."""
 
 
-def read_file(filename=""):
-    """Reads and prints the contents of a text file."""
-    with open(filename) as file:
-        info = file.read()
-        print(info, end="")
-
+def write_file(filename="", text=""):
+    """Writes text to a file and returns the number of characters written."""
+    with open(filename, "w", encoding="utf-8") as file:
+        return file.write(text)
