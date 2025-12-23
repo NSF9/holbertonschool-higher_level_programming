@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-import json
-
 """
 This module provides a function to load data from a JSON file.
 """
+
+import json
 
 def load_from_json_file(filename):
     """
