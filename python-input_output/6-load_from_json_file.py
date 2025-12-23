@@ -5,6 +5,7 @@ This module provides a function to load data from a JSON file.
 
 import json
 
+
 def load_from_json_file(filename):
     """
     Load data from a JSON file and return the corresponding Python object.
