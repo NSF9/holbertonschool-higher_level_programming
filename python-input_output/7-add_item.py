@@ -18,7 +18,7 @@ if __name__ == "__main__":
     Loads existing items from a JSON file if it exists,
     then appends command-line arguments and saves them back.
     """
-    file = "item_json"
+    file = "add_item.json"
 
     if os.path.exists(file):
         a_list = load_from_json(file)
