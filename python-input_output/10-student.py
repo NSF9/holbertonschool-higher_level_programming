@@ -9,20 +9,17 @@ class Student:
 
     def __init__(self, first_name, last_name, age):
         """Initialize student attributes."""
-        self.__first_name = first_name
+        self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
     def to_json(self, attrs=None):
-        """
-        Return dictionary of attributes.
-        If attrs is a list of strings, return only those attributes.
-        """
+        """Return a dictionary representation of the student."""
         if attrs is None:
             return self.__dict__
 
-        filtered_list = {
-            key: value for key, value in self.__dict__.items()
-            if key in attrs
+        return {
+            key: getattr(self, key)
+            for key in attrs
+            if hasattr(self, key)
         }
-        return filtered_list
