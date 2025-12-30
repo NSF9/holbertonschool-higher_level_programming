@@ -12,3 +12,8 @@ However, HTTP does **not encrypt** the data, which makes it vulnerable to interc
 **HTTPS (Hypertext Transfer Protocol Secure)** is the secure version of HTTP.  
 It adds an **encryption layer using SSL/TLS**, ensuring that the data exchanged between the client and the server is encrypted, private, and protected from tampering or eavesdropping.
 
+## 🧭 HTTP Request Flow Diagram
+
+This diagram illustrates the flow of an HTTP request from the client through the server and API, ending at the database and returning the response back to the client.
+
+![HTTP Structure Diagram](./HTTP_Flow.drawio.png)
