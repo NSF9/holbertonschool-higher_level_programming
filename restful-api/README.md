@@ -22,4 +22,4 @@ This diagram illustrates the flow of an HTTP request from the client through the
 
 The image below shows an actual HTTP GET request inspected from the browser’s developer tools:
 
-![HTTP Request Example](./http-request-network.png)
+![HTTP Request Example](http-request-network.png)
