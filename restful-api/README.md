@@ -40,3 +40,8 @@ DELETE  -- Deletes data from server        -- Remove a comment or post
 404     -- Not Found                       -- Page or resource doesn’t exist  
 500     -- Internal Server Error           -- Server crashed or encountered unexpected error  
 
+---
+
+## ✅ Conclusion
+
+This project provided a hands-on understanding of RESTful APIs and HTTP fundamentals, including real-world inspection of requests, the structure of communication, and the role of methods and status codes in modern web applications.
