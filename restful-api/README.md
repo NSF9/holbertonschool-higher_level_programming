@@ -27,15 +27,16 @@ The image below shows an actual HTTP GET request inspected from the browser’s 
 
 ## 📤 Common HTTP Methods
 
-GET    -- Retrieves data from server -- Fetch user profile
-POST   -- Sends new data to server   -- Submit registration form
-PUT    -- Updates existing data      -- Edit user account info
-DELETE -- Deletes data from server   -- Remove a comment or post
+GET     -- Retrieves data from server      -- Fetch user profile  
+POST    -- Sends new data to server        -- Submit registration form  
+PUT     -- Updates existing data           -- Edit user account info  
+DELETE  -- Deletes data from server        -- Remove a comment or post  
 
 ## 📤 Common HTTP Status Codes
 
-200 -- OK – Success          -- Request processed successfully 
-201 -- Created               -- New resource successfully created
-301 -- Moved Permanently     -- Resource permanently moved to a new URL
-404 -- Not Found             -- Page or resource doesn’t exist
-500 -- Internal Server Error -- Server crashed or encountered unexpected error 
+200     -- OK – Success                    -- Request processed successfully  
+201     -- Created                         -- New resource successfully created  
+301     -- Moved Permanently               -- Resource permanently moved to a new URL  
+404     -- Not Found                       -- Page or resource doesn’t exist  
+500     -- Internal Server Error           -- Server crashed or encountered unexpected error  
+
