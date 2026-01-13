@@ -1,2 +1,2 @@
 -- show full table 
-SHOW TABLE first_table
+SHOW CREATE TABLE first_name; 
