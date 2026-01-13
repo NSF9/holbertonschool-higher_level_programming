@@ -1,2 +1,3 @@
 -- show list of second_table by top score
-SELECT TOP 1 score, name FROM second_table
+SELECT score, name FROM second_table
+ORDER BY score DESC;
