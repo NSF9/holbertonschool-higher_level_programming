@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""Filter states by name input (exact match, case-sensitive)"""
+"""Filter states by name (case sensitive)"""
 
 import MySQLdb
 import sys
 
 
 def filter_states_by_name(username, password, database_name, state_name):
-    """Displays states with names matching the user input"""
+    """Displays states matching the given name (case-sensitive)"""
     try:
         db = MySQLdb.connect(
             host="localhost",
@@ -17,11 +17,14 @@ def filter_states_by_name(username, password, database_name, state_name):
         )
 
         cursor = db.cursor()
-        cursor.execute(
-        "SELECT * FROM states "
+
+        query = (
+            "SELECT * FROM states "
             "WHERE name = BINARY '{}' "
             "ORDER BY id ASC"
         ).format(state_name)
+
+        cursor.execute(query)
 
         for row in cursor.fetchall():
             print(row)
@@ -34,4 +37,9 @@ def filter_states_by_name(username, password, database_name, state_name):
 
 
 if __name__ == "__main__":
-    filter_states_by_name(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
+    filter_states_by_name(
+        sys.argv[1],
+        sys.argv[2],
+        sys.argv[3],
+        sys.argv[4]
+    )
