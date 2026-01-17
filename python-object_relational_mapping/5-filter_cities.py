@@ -4,6 +4,7 @@
 import MySQLdb
 import sys
 
+
 def list_cities_by_state(username, password, dbname, state_name):
     try:
         db = MySQLdb.connect(
@@ -15,13 +16,13 @@ def list_cities_by_state(username, password, dbname, state_name):
         )
 
         cur = db.cursor()
-        query = """
-        SELECT cities.id, cities.name
-        FROM cities
-        JOIN states ON cities.state_id = states.id
-        WHERE states.name = %s
-        ORDER BY cities.id ASC;
-        """
+        query = (
+            "SELECT cities.id, cities.name "
+            "FROM cities "
+            "JOIN states ON cities.state_id = states.id "
+            "WHERE states.name = %s "
+            "ORDER BY cities.id ASC;"
+        )
         cur.execute(query, (state_name,))
         rows = cur.fetchall()
 
@@ -36,4 +37,6 @@ def list_cities_by_state(username, password, dbname, state_name):
 
 if __name__ == "__main__":
     if len(sys.argv) == 5:
-        list_cities_by_state(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
+        list_cities_by_state(
+            sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
+        )
