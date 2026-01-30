@@ -9,5 +9,5 @@ else if (process.argv.length < 4)
 }
 else
 {
-    console.log('Argument found');
+    console.log('Arguments found');
 }
