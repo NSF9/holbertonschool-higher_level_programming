@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Holberton School</title>
+    <title>Toggle Header Color</title>
+    <style>
+      .red {
+        color: red;
+      }
+      .green {
+        color: green;
+      }
+    </style>
   </head>
   <body>
-    <header> 
-      First HTML page
-    </header>
-    <footer>
-      Holberton School - 2022
-    </footer>
-    <script type="text/javascript" src="0-script.js"></script>
+    <header class="red">First HTML page</header>
+
+    <div id="toggle_header" style="cursor:pointer; color:blue; margin-top: 20px;">
+     click here to toggle header color
+    </div>
+
+    <script src="3-script.js"></script>
   </body>
 </html>
