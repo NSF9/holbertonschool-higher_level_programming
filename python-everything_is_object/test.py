@@ -12,3 +12,6 @@ b=a
 print(a is b)
 
 print(id(a), id(b))
+
+b = a+1
+print(id(a), id(b))
