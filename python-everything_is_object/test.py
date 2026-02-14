@@ -103,3 +103,5 @@ print(a is b)
 a = ()
 b = ()
 print(a is b)
+
+print(id(a))
