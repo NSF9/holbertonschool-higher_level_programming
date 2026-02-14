@@ -76,3 +76,30 @@ l1 = [1, 2, 3]
 l2 = [4, 5, 6]
 assign_value(l1, l2)
 print(l1)
+
+a = ()
+print(type(a))
+
+a = (1, 2)
+
+print(type(a))
+
+a = (1)
+
+print(type(a))
+
+a = (1, )
+
+print(type(a))
+
+a = (1)
+b = (1)
+print(a is b)
+
+a = (1, 2)
+b = (1, 2)
+print(a is b)
+
+a = ()
+b = ()
+print(a is b)
