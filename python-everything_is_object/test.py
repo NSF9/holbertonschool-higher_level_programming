@@ -18,4 +18,4 @@ print(id(a), id(b))
 
 s1="best School"
 s2= s1
-print(s1 == s2)
+print(s1 is s2)
