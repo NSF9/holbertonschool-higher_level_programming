@@ -15,3 +15,7 @@ print(id(a), id(b))
 
 b = a+1
 print(id(a), id(b))
+
+s1="best School"
+s2= s1
+print(s1 == s2)
