@@ -1,0 +1,1 @@
+this is evrything about python server side rendering
